@@ -79,4 +79,6 @@ if __name__ == '__main__':
     implement_comp_addr = '''select account, implement_comp_addr, implement_comp_code from record'''
     company_addr = '''select account, company_addr, company_addr_code from employ'''
     area_dict = get_area_code_dict()
+    addr_validate_and_verify('enrollment_addr', enrollment_addr, area_dict)
+    addr_validate_and_verify('implement_comp_addr', implement_comp_addr, area_dict)
     addr_validate_and_verify('company_addr', company_addr, area_dict)
